@@ -9,6 +9,7 @@
     <version>1.0</version>
     <modules>
         <module>dubbo-api</module>
+        <module>dubbo-echo-provider</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
