@@ -30,4 +30,13 @@ public class Message implements Serializable {
     public void setSender(String sender) {
         this.sender = sender;
     }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", sender='" + sender + '\'' +
+                '}';
+    }
 }
