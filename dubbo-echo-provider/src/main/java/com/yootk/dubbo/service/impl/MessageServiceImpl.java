@@ -9,9 +9,9 @@ public class MessageServiceImpl implements IMessageService {
     @Override
     public Message echo(Message msg) {
         Message echoMessage = new Message() ;
-        echoMessage.setTitle("【ECHO - " + Thread.currentThread().getName() + "】" + msg.getTitle());
-        echoMessage.setContent("【ECHO - " + Thread.currentThread().getName() + "】" + msg.getContent());
-        echoMessage.setSender("【ECHO - " + Thread.currentThread().getName() + "】" + msg.getSender());
+        echoMessage.setTitle("【ECHO - 3】" + msg.getTitle());
+        echoMessage.setContent("【ECHO - 3】" + msg.getContent());
+        echoMessage.setSender("【ECHO - 3】" + msg.getSender());
         return echoMessage;
     }
 }
