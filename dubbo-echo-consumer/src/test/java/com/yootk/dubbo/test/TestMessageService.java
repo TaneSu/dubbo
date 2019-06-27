@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class TestMessageService {
 //    @Reference(mock = "true",check = false)
     @Reference(mock = "return null",check = false)
+    // @Reference(url = "dubbo://192.168.31.247:9327/com.yootk.dubbo.service.IMessageService")
     private IMessageService messageInstance ;
     @Test
     public void testEcho() throws Exception {

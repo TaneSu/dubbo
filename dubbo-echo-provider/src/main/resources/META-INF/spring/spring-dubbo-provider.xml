@@ -18,5 +18,5 @@
     <dubbo:protocol name="dubbo" port="${dubbo.protocol.port}" />
     <dubbo:annotation package="com.yootk.dubbo.service.impl"/>  <!-- 扫描路径 -->
     <dubbo:provider timeout="${dubbo.provider.timeout}"
-                    dispatcher="message" threadpool="fixed" threads="8"/>
+                    dispatcher="message" threadpool="fixed" threads="8" token="true"/>
 </beans>
