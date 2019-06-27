@@ -42,10 +42,22 @@
         <junit.version>4.12</junit.version>
         <netty.version>4.1.36.Final</netty.version>
         <curator.version>4.2.0</curator.version>
+        <sentinel.version>1.6.2</sentinel.version>
         <dubbo.project.version>1.0</dubbo.project.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-dubbo-adapter</artifactId>
+                <version>${sentinel.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-transport-simple-http</artifactId>
+                <version>${sentinel.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.yootk</groupId>
                 <artifactId>dubbo-api</artifactId>

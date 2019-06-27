@@ -13,10 +13,18 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/profiles/dev" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/bin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/assembly" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-dubbo-adapter:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-core:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-transport-simple-http:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-transport-common:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-datasource-extension:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.56" level="project" />
     <orderEntry type="module" module-name="dubbo-api" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-framework:4.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-client:4.2.0" level="project" />
