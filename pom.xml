@@ -36,6 +36,8 @@
         <mysql.version>5.1.47</mysql.version>
         <logback.version>1.2.3</logback.version>
         <org.slf4j.version>1.7.25</org.slf4j.version>
+        <activemq.version>5.15.9</activemq.version>
+        <jms-api.version>2.0.1</jms-api.version>
         <commons.beanutils.version>1.9.3</commons.beanutils.version>
         <commons.lang3.version>3.6</commons.lang3.version>
         <net.sf.json.version>2.3</net.sf.json.version>
@@ -62,6 +64,22 @@
                 <artifactId>dubbo-util</artifactId>
                 <version>${dubbo.project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-all</artifactId>
+                <version>${activemq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.jms</groupId>
+                <artifactId>javax.jms-api</artifactId>
+                <version>${jms-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jms</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.yootk</groupId>
                 <artifactId>dubbo-api</artifactId>
