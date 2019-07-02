@@ -13,6 +13,10 @@
         <module>dubbo-echo-consumer</module>
         <module>login</module>
         <module>dubbo-util</module>
+        <module>authentication</module>
+        <module>server-common</module>
+        <module>test-comsumer</module>
+        <module>autnorization</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -29,7 +33,7 @@
         <!-- 定义所有使用的开发包的版本 -->
         <druid.version>1.1.17</druid.version>
         <dubbo.version>2.5.10</dubbo.version>
-        <zookeeper.version>3.5.5</zookeeper.version>
+        <zookeeper.version>3.4.12</zookeeper.version>
         <zkclient.version>0.11</zkclient.version>
         <mybatis.version>3.5.1</mybatis.version>
         <mybatis.spring.version>2.0.1</mybatis.spring.version>
@@ -59,6 +63,11 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.yootk</groupId>
+                <artifactId>server-common</artifactId>
+                <version>${dubbo.project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.yootk</groupId>
                 <artifactId>dubbo-util</artifactId>
@@ -327,6 +336,11 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context-support</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
